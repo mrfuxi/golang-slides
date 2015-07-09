@@ -1,0 +1,44 @@
+Go(lang)
+Intro
+
+Karol Dulęba
+Developer, Potato
+
+* Outline
+1. What is Go
+2. Advantages
+3. Disadvantages
+4. Hello world
+
+* What is Go(lang)
+
+- Developed at Google in 2007
+- Statically-typed, syntax resembles C
+- Garbage collected
+
+* Advantages
+
+- Fast
+- Compiles to static binary
+- Great standard library
+- Promise of backward compatibility (no Py2 -> Py3)
+- Concurrent in core (easy and safe)
+- Tooling
+- Meets nearly all of "Zen of Python" criteria. [[http://talks.golang.org/2012/zen.slide][awesome dropping presentation]]
+- *Simple*
+
+* Disadvantages
+
+- Young
+- Different
+- *Simple*
+
+* Hello world
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, 世界")
+}
