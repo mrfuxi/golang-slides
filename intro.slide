@@ -9,6 +9,7 @@ Developer, Potato
 2. Advantages
 3. Disadvantages
 4. Hello world
+5. How to use Go
 
 * What is Go(lang)
 
@@ -24,7 +25,7 @@ Developer, Potato
 - Promise of backward compatibility (no Py2 -> Py3)
 - Concurrent in core (easy and safe)
 - Tooling
-- Meets nearly all of "Zen of Python" criteria. [[http://talks.golang.org/2012/zen.slide][awesome dropping presentation]]
+- Meets nearly all of "Zen of Python" criteria. [[http://talks.golang.org/2012/zen.slide][awesome presentation]]
 - *Simple*
 
 * Disadvantages
@@ -35,10 +36,18 @@ Developer, Potato
 
 * Hello world
 
-package main
+.play intro/hello_world.go
 
-import "fmt"
+* Hello world (web)
 
-func main() {
-    fmt.Println("Hello, 世界")
-}
+.play intro/hello_web.go
+
+.link http://localhost:7000 Hello!
+
+* How to use Go
+
+- Go is not Python. To work with Go, forget what you know about Python
+- Own idioms, formatting, conventions...
+- Philosophy is more important than syntax
+- KISS and YAGNI are your best friends (no Django like tools)
+- Leverage Go's feature set. Don't try to fight
