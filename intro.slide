@@ -10,6 +10,9 @@ Developer, Potato
 3. Disadvantages
 4. Hello world
 5. How to use Go
+6. Django?
+8. Tooling
+7. Why to use Go
 
 * What is Go(lang)
 
@@ -50,4 +53,26 @@ Developer, Potato
 - Own idioms, formatting, conventions...
 - Philosophy is more important than syntax
 - KISS and YAGNI are your best friends (no Django like tools)
-- Leverage Go's feature set. Don't try to fight
+- Leverage Go's feature set. Don't try to fight it
+
+* Django?
+
+- There is no Django like tool for Go
+- There are some more or less feature full frameworks (Martini, Beego, Revel)
+- Community do not look for or approve tools that do not use standard Handler and HandlerFunc
+- Simple tools over frameworks (net/http, Gorillas, Negroni)
+
+* Tooling
+
+- go build
+- go fmt
+- go generate
+- go get
+- go test
+- go vet
+- godoc
+- gorename
+
+* Why to use Go
+
+* To create tools/apps that make job done
