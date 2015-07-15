@@ -54,6 +54,7 @@ Developer, Potato
 - Philosophy is more important than syntax
 - KISS and YAGNI are your best friends (no Django like tools)
 - Leverage Go's feature set. Don't try to fight it
+- Build smart stuff that is consistent with UNIX philosophy
 
 * Django?
 
@@ -75,4 +76,4 @@ Developer, Potato
 
 * Why to use Go
 
-* To create tools/apps that make job done
+* To create smart tools/apps that make job done.
