@@ -2,7 +2,7 @@ Go(lang)
 Intro
 
 Karol Dulęba
-Developer, Potato
+Potato Dev
 
 * Outline
 1. What is Go
@@ -30,6 +30,7 @@ Developer, Potato
 - Tooling
 - Meets nearly all of "Zen of Python" criteria. [[http://talks.golang.org/2012/zen.slide][awesome presentation]]
 - *Simple*
+- *Explicit*
 
 * Disadvantages
 
@@ -74,6 +75,7 @@ Developer, Potato
 - go vet
 - godoc
 - gorename
+- goimports
 
 * Why to use Go
 
@@ -84,4 +86,4 @@ Developer, Potato
 - Gives perspective
 - Teaches how to create simpler and more maintainable solutions
 - Let me build cool tools. Soon native mobile apps too!
-- Bottom line: Go makes be a better Python developer, obviously
+- Bottom line: Go makes me a better Python developer, obviously
