@@ -77,6 +77,10 @@ Potato Dev
 - gorename
 - goimports
 
+* Interesting feature: Interface
+
+.play intro/interface.go
+
 * Why to use Go
 
 * To create smart tools/apps that make job done.
