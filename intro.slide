@@ -77,9 +77,13 @@ Potato Dev
 - gorename
 - goimports
 
-* Interesting feature: Interface
+* Interesting feature: Interface - definition
 
-.play intro/interface.go
+.code intro/interface.go /START OMIT/,/MID OMIT/
+
+* Interesting feature: Interface - usage
+
+.play intro/interface.go /MID OMIT/,/END OMIT/
 
 * Why to use Go
 
