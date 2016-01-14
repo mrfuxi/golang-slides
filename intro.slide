@@ -4,16 +4,6 @@ Intro
 Karol Dulęba
 Potato Dev
 
-* Outline
-1. What is Go
-2. Advantages
-3. Disadvantages
-4. Hello world
-5. How to use Go
-6. Django?
-8. Tooling
-7. Why to use Go
-
 * What is Go(lang)
 
 - Developed at Google in 2007
@@ -49,12 +39,20 @@ Potato Dev
 
 .link http://localhost:7000 Hello!
 
+* Hello world - GAE
+
+.code intro/gae.go
+
+* Web request
+
+.play intro/web_request.go /START OMIT/,/END OMIT/
+
 * How to use Go
 
 - Go is not Python. To work with Go, forget what you know about Python
 - Own idioms, formatting, conventions...
 - Philosophy is more important than syntax
-- KISS and YAGNI are your best friends (no Django like tools)
+- KISS and YAGNI are your best friends
 - Leverage Go's feature set. Don't try to fight it
 - Build smart stuff that is consistent with UNIX philosophy
 
@@ -84,6 +82,19 @@ Potato Dev
 * Interesting feature: Interface - usage
 
 .play intro/interface.go /MID OMIT/,/END OMIT/
+
+* Interesting feature: Goroutines
+
+.play intro/goroutines_simple.go
+
+* Interesting feature: Goroutines - Web request
+
+.play intro/goroutines_web.go /START OMIT/,/END OMIT/
+
+* Interesting feature: Channels
+
+.play intro/channels.go /START OMIT/,/END OMIT/
+
 
 * Why to use Go
 

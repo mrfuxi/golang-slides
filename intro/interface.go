@@ -13,7 +13,7 @@ type ShapeArea interface {
 type Square struct{ Side float64 }
 
 func (s Square) Area() float64  { return s.Side * s.Side }
-func (s Square) String() string { return fmt.Sprintf("<Sqare %v>", s.Side) }
+func (s Square) String() string { return fmt.Sprintf("<Square %v>", s.Side) }
 
 type Circle struct{ Radius float64 }
 

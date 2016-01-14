@@ -5,12 +5,10 @@ import (
 	"net/http"
 )
 
-func main() {
-	fmt.Println("Listening...")
+func init() {
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(":7000", nil)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, world!")
+	fmt.Fprint(w, "Hello, world!")
 }
