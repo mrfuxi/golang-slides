@@ -1,49 +1,30 @@
 package main
 
-import (
-	"fmt"
-	"io/ioutil"
-	"net/http"
-)
-
-func Fetch(url string) (string, error) {
-	resp, err := http.Get(url)
-	if err != nil {
-		return "", err
-	}
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return "", err
-	}
-	return string(body), err
-}
+import "fmt"
 
 // START OMIT
-
-func FetchWorker(in <-chan string, out chan<- string) {
-	for url := range in {
-		fmt.Println("Worker: fetch", url)
-		body, err := Fetch(url)
-		if err != nil {
-			out <- err.Error()
-		} else {
-			out <- body
-		}
+func Worker(in <-chan int, out chan<- string) {
+	for value := range in {
+		fmt.Println("Worker:", value)
+		out <- fmt.Sprintf("%v*%v = %v", value, value, value*value)
 	}
 	close(out)
 }
 
 func main() {
-	in := make(chan string, 10)
-	out := make(chan string, 10)
-	go FetchWorker(in, out)
-	in <- "http://localhost:7000"
-	in <- "http://localhost:7001"
-	close(in)
+	in := make(chan int)
+	out := make(chan string)
+	go Worker(in, out)
+
+	go func() {
+		in <- 1
+		in <- 2
+		in <- 15
+		close(in)
+	}()
 
 	for msg := range out {
-		fmt.Println("Main:", msg)
+		fmt.Println("Anwser:", msg)
 	}
 }
 
