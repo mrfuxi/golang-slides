@@ -15,5 +15,5 @@ and [open the browser](http://127.0.0.1:3999)
 Presentation tool:
 
 ```bash
-go get golang.org/x/tools/present
+go get -u golang.org/x/tools/cmd/present
 ```
