@@ -14,6 +14,6 @@ func echo(from string) {
 }
 
 func main() {
-	go echo("123")
+	go echo("123") // HL
 	echo("ABC")
 }

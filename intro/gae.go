@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func init() {
+func init() { // HL
 	http.HandleFunc("/", handler)
 }
 

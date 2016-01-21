@@ -8,12 +8,12 @@ import (
 
 // START OMIT
 func Fetch(url string) (string, error) {
-	resp, err := http.Get(url)
+	resp, err := http.Get(url) // HL
 	if err != nil {
 		return "", err
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := ioutil.ReadAll(resp.Body) // HL
 	if err != nil {
 		return "", err
 	}
