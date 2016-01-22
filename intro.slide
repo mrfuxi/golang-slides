@@ -12,7 +12,7 @@ Potato Dev
 
 * Advantages
 
-- Fast
+- [[http://www.techempower.com/benchmarks/#section=data-r11&hw=ec2&test=json][Fast]]
 - Compiles to static binary
 - Great standard library
 - Promise of backward compatibility (no Py2 -> Py3)
